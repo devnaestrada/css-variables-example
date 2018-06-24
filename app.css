@@ -1,0 +1,38 @@
+html {
+    --app-background-color: white;
+    --app-base-color: black;
+}
+
+html[dark] {
+    --app-background-color: black;
+    --app-base-color: white;
+}
+
+:root {
+    --primary-color: red;
+    --secondary-color: yellow;
+    --base-text-color: #333;
+}
+
+body {
+    background-color: var(--app-background-color);
+    color: var(--app-base-color);
+    margin: 50px;
+}
+
+.theme-component {
+    --theme-component-button: purple;
+    --theme-component-button-text: white;
+    background-color: var(--primary-color);
+    color: var(--secondary);
+    padding: 15px;
+}
+
+.theme-component button {
+    background-color: var(--theme-component-button);
+    color: var(--theme-component-button-text);
+}
+
+.text {
+    color: var(--theme-component-button-text);
+}
